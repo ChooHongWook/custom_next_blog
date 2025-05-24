@@ -1,0 +1,20 @@
+# Node.js 관련
+node_modules/
+pnpm-debug.log*
+pnpm-lock.yaml
+
+# 환경 변수 파일
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Next.js 빌드 결과물
+.next/
+
+# TypeScript 빌드 결과물
+*.tsbuildinfo
+
+# OS/IDE 관련 불필요한 파일
+.vscode/

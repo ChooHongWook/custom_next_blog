@@ -1,0 +1,21 @@
+{
+  "name": "custom_next_blog",
+  "version": "1.0.0",
+  "description": "nextJS blog",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "next": "^15.1.8",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.21",
+    "@types/react": "19.1.5",
+    "typescript": "5.8.3"
+  }
+}
