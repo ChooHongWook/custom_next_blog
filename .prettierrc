@@ -11,5 +11,17 @@
   "useTabs": false,
 
   "arrowParens": "always",
-  "bracketSpacing": true
+  "bracketSpacing": true,
+
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+
+  "importOrder": [
+    "^(react/(.*)$)|^(react$)|^(next/(.*)$)|^(next$)",
+    "<THIRD_PARTY_MODULES>",
+    "^@?\\w",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "importOrderGroupNamespaceSpecifiers": true
 }
