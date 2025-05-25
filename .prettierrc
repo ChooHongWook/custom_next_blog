@@ -13,7 +13,10 @@
   "arrowParens": "always",
   "bracketSpacing": true,
 
-  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "plugins": [
+    "prettier-plugin-tailwindcss",
+    "@trivago/prettier-plugin-sort-imports"
+  ],
 
   "importOrder": [
     "^(react/(.*)$)|^(react$)|^(next/(.*)$)|^(next$)",
