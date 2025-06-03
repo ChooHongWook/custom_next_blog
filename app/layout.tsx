@@ -1,5 +1,6 @@
 import '@/style/globals.css';
 import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 
 export const metadata = {
   title: 'My Page',
@@ -14,6 +15,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
+        <Header />
         {children}
         <Footer />
       </body>
