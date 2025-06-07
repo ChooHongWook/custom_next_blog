@@ -1,6 +1,7 @@
 import '@/style/globals.css';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
+import Providers from '@/provider/Providers';
 
 export const metadata = {
   title: 'My Page',
@@ -15,9 +16,11 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className="flex min-h-screen flex-col">
-        <Header />
-        {children}
-        <Footer />
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
