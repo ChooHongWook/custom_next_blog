@@ -45,3 +45,18 @@ export const useGetPost = (
     ...options,
   });
 };
+
+export const useAddPost = (
+  data: IPost,
+  options?: UseMutationOptions<IPost, Error, IPost, unknown>,
+) => {
+  const mutationKey = `${baseUrl}`;
+  const mutationFn = async () =>
+    fetch.post(mutationKey, data).then((res: { data: IPost }) => res.data);
+
+  return useMutation<IPost, Error, IPost, unknown>({
+    mutationKey: [mutationKey],
+    mutationFn,
+    ...options,
+  });
+};
