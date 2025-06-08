@@ -5,7 +5,7 @@ export interface IPost {
   content: string;
   date: string;
   author: string;
-  category: string;
+  category?: number;
   tags: string[];
   readTime: string;
 }
