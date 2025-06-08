@@ -24,3 +24,24 @@ export const useGetPosts = (
     ...options,
   });
 };
+
+export type TReturnGetPost = {
+  data: IPost;
+};
+export const useGetPost = (
+  postId: string,
+  options?: Omit<
+    UseQueryOptions<TReturnGetPost, Error, TReturnGetPost, [string]>,
+    'queryKey' | 'queryFn'
+  >,
+) => {
+  const queryKey = `${baseUrl}/${postId}`;
+  const queryFn = async () =>
+    fetch.get(`${queryKey}?postId=${postId}`).then((res: { data: TReturnGetPost }) => res.data);
+
+  return useQuery<TReturnGetPost, Error, TReturnGetPost, [string]>({
+    queryKey: [queryKey],
+    queryFn,
+    ...options,
+  });
+};

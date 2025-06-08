@@ -75,7 +75,7 @@ export const blogPostsMockData: IPost[] = [
     content: '카테고리가 없는 블로그//',
     date: '2024-02-20',
     author: '정그래프큐엘',
-    category: undefined,
+    category: 1,
     tags: ['GraphQL', 'REST', 'API'],
     readTime: '14분',
   },

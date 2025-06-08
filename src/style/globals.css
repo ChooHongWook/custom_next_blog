@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 
 @import './_reset.css';
+@import './blog-content.scss';
 
 :root {
   /* color */
