@@ -3,10 +3,10 @@
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import { useGetPosts } from '@/api/blog/post';
-import Page from '@/components/Page';
+import Page from '@/components/layout/Page';
+import { cn } from '@/lib/utils';
 import { categories } from '@/mock/blog';
 import { IPost } from '@/type/blog.types';
-import { cn } from '@/utils/cn';
 import { Search } from 'lucide-react';
 import BlogCard from './components/BlogCard';
 

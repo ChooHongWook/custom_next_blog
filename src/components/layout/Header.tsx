@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
-import { cn } from '@/utils/cn';
-import NextLink from './common/NextLink';
+import NextLink from '@/components/common/NextLink';
+import { cn } from '@/lib/utils';
 
 function Header() {
   return (
